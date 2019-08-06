@@ -1,7 +1,7 @@
 import React from 'react';
-import Hello from './Hello';
-import Counter from './Counter';
-import Input from './Input';
+import Hello from './components/Hello';
+import Counter from './components/Counter';
+import Input from './components/Input';
 
 function App() {
   return (
