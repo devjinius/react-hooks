@@ -49,12 +49,16 @@ function App() {
     nextId.current += 1;
   };
 
+  const onRemove = id => {
+    setUsers(users.filter(user => id !== user.id));
+  };
+
   return (
     <div>
       <Hello />
       <Counter />
       <Input />
-      <List users={users} />
+      <List users={users} onRemove={onRemove} />
       <CreateUser {...inputs} onChange={onChange} onCreate={onCreate} />
     </div>
   );
